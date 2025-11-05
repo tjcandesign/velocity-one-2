@@ -861,10 +861,7 @@ img {
     letter-spacing: -0.01em;
 }
 
-.hero .subhead:hover {
-    border-left-color: var(--accent-blue);
-    padding-left: 2.5rem;
-}
+/* Removed hover effect from .subhead */
 
 /* Hero Divider */
 .hero-divider {
