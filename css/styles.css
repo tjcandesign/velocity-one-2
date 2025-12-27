@@ -1070,10 +1070,7 @@ img {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: 
-        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-    background-size: 50px 50px;
+    background: transparent;
     opacity: 0.5;
     z-index: 0;
 }
@@ -1085,10 +1082,7 @@ img {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: 
-        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-    background-size: 50px 50px;
+    background: transparent;
     opacity: 0.5;
     z-index: 0;
 }
@@ -1148,6 +1142,155 @@ img {
     }
 }
 
+/* Multi-Directional Strength Section */
+.strength-section {
+    background-color: var(--light-bg);
+    padding: 6rem 0;
+}
+
+.strength-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.strength-intro {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+    color: var(--text);
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.strength-graphic,
+.strength-comparison {
+    width: 100%;
+    margin: 3rem 0;
+    position: relative;
+}
+
+.strength-graphic img,
+.strength-comparison img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.strength-graphic img:hover,
+.strength-comparison img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.caption {
+    text-align: center;
+    margin-top: 1rem;
+    color: var(--text-muted);
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+.strength-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 4rem 0;
+}
+
+.strength-features .feature {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.strength-features .feature:hover {
+    transform: translateY(-5px);
+}
+
+.strength-features h3 {
+    color: var(--accent);
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.strength-features h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background-color: var(--accent);
+}
+
+.strength-benefits {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin: 4rem 0;
+}
+
+.strength-benefits h3 {
+    color: var(--navy);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+}
+
+.strength-benefits ul {
+    list-style: none;
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.strength-benefits li {
+    position: relative;
+    padding-left: 1.75rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+}
+
+.strength-benefits li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .strength-intro {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+    
+    .strength-features {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+    
+    .strength-benefits {
+        padding: 2rem 1.5rem;
+        margin: 3rem 1rem;
+    }
+    
+    .strength-benefits ul {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Companies Section */
 .companies {
     background-color: var(--navy);
@@ -1175,10 +1318,7 @@ img {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: 
-        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-    background-size: 50px 50px;
+    background: transparent;
     opacity: 0.5;
     z-index: 0;
     animation: gridMove 30s linear infinite;
@@ -1191,10 +1331,7 @@ img {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: 
-        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-    background-size: 50px 50px;
+    background: transparent;
     opacity: 0.5;
     z-index: 0;
 }
